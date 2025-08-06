@@ -8,4 +8,12 @@
 </template>
 
 <style scoped>
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border-radius: 15px;
+    padding: var(--spacing-sm) var(--spacing-xl);
+  }
 </style>
