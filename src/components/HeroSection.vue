@@ -7,7 +7,7 @@
   <section id="hero-section">
     <div class="hero-container">
       <div class="title">
-        <span>John Trinidad</span>
+        <a>John Trinidad</a>
       </div>
 
       <div class="subtitle">
@@ -32,15 +32,14 @@
   .hero-container {
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 500px;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    width: 1000px;
     background-image: 
-      radial-gradient(circle at 45% 40%, rgba(59, 130, 246, 0.3), transparent 40%),
-      radial-gradient(circle at 55% 60%, rgba(59, 130, 246, 0.25), transparent 35%),
-      radial-gradient(closest-side, rgba(255, 230, 0, 0.21), #1A1A1A);
+      radial-gradient(closest-side, rgba(255, 200, 0, 0.2), var(--color-background-primary)),
+      radial-gradient(closest-side, rgba(0, 213, 255, 0.6), var(--color-background-primary));
     background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     margin: 0 auto;
   }
