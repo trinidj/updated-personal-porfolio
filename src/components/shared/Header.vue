@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: space-between;
     background: hsl(from var(--color-background-primary) h s calc(l - 5) / 0.1);
-    padding: var(--spacing-lg) var(--spacing-5xl);
+    padding: var(--spacing-lg) var(--spacing-7xl);
     border-bottom: 1px solid hsl(from var(--color-background-primary) h s calc(l + 10));
   }
 
