@@ -1,26 +1,31 @@
 <script setup>
   import Button from '@/components/ui/Button.vue';
-  import { ArrowRight } from 'lucide-vue-next';
+  import { ArrowRight } from 'lucide-vue-next';  
 </script>
 
 <template>
   <section id="hero-section">
     <div class="hero-container">
       <div class="title">
-        <a>John Trinidad</a>
+        <h1>
+          <span class="first-name">John</span>
+          <span class="last-name">Trinidad</span>
+        </h1>
       </div>
 
       <div class="subtitle">
-        <span></span>
+        <p>Creative Developer & Designer. Building digital experiences that bridge technology and human connection.</p>
       </div>
 
       <div class="call-to-action">
-        <Button>
-          <span>View Project</span>
-          <ArrowRight />
+        <Button class="view-projects">
+          <span>View Projects</span>
+          <ArrowRight 
+            :size="16"
+          />
         </Button>
 
-        <Button>
+        <Button class="contact-me">
           <span>Contact Me</span>
         </Button>
       </div>
@@ -34,13 +39,100 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 1000px;
-    width: 1000px;
+    gap: var(--spacing-xl);
+    height: 800px;
+
+    --circle1-opacity: 0.4;
+    --circle2-opacity: 0.4;
+
     background-image: 
-      radial-gradient(closest-side, rgba(255, 200, 0, 0.2), var(--color-background-primary)),
-      radial-gradient(closest-side, rgba(0, 213, 255, 0.6), var(--color-background-primary));
-    background-position: center center;
-    position: relative;
+      radial-gradient(closest-side, 
+        rgba(0, 213, 255, 0.4) 0%, 
+        rgba(0, 213, 255, 0.3) 30%, 
+        rgba(0, 213, 255, 0.15) 60%, 
+        rgba(0, 213, 255, 0.05) 80%, 
+        transparent 100%
+      ),
+      radial-gradient(closest-side, 
+        rgba(4, 255, 209, 0.4) 0%, 
+        rgba(4, 255, 209, 0.3) 30%, 
+        rgba(4, 255, 209, 0.15) 60%, 
+        rgba(4, 255, 209, 0.05) 80%, 
+        transparent 100%
+      );
+    background-position: 
+      30% 50%,    
+      70% 50%;   
+    background-size:
+      700px 700px,  
+      700px 700px;  
+    background-repeat: no-repeat;
     margin: 0 auto;
+  }
+
+  .title {
+    font-size: var(--text-5xl);
+  }
+
+  .title h1 {
+    display: flex;
+    gap: var(--spacing-base);
+  }
+
+  .first-name {
+    color: white;
+  }
+
+  .last-name {
+    background-image: linear-gradient(to right, #00eeff, #00949e);
+
+    background-clip: text;
+    -webkit-background-clip: text; 
+
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+  }
+
+  .subtitle {
+    font-size: var(--text-3xl);
+    text-align: center;
+    font-weight: 600;
+    color: hsl(from #ffffff h s calc(l - 5) / 0.6);
+    width: 50%;
+  }
+
+  .call-to-action {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
+
+  .view-projects {
+    background: linear-gradient(
+      to right,
+      #2af2db, 
+      #F0F7F4
+    )
+  }
+
+  .view-projects,
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+
+  .view-projects span,
+  .contact-me {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+
+  .view-projects:hover,
+  .contact-me:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 </style>
