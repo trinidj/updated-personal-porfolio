@@ -135,4 +135,10 @@
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  .contact-me {
+    background: hsl(from var(--color-background-primary) h s calc(l - 10) / 0.2);
+    color: white;
+    transition: all 0.2s ease;
+  }
 </style>
