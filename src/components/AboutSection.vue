@@ -1,5 +1,6 @@
 <script setup>
-
+  import ServiceCard from '@/components/ui/ServiceCard.vue';
+  import { Code2, Palette, Lightbulb } from 'lucide-vue-next';
 </script>
 
 <template>
@@ -22,7 +23,12 @@
         </div>
 
         <div class="service-content">
-          
+          <ServiceCard 
+            title="Front-end Development"
+            desc="Expert in React, TypeScript, Next.js, and modern CSS frameworks. Building responsive, performant user interfaces with clean code."
+          >
+            <Code2 />
+          </ServiceCard>
         </div>
       </div>
     </div>
@@ -35,8 +41,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
     background: hsl(from var(--color-background-primary) h s calc(l - 2));
     margin: 0 auto;
+  }
+
+  .title h2 {
+    font-size: var(--text-5xl);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 </style>
