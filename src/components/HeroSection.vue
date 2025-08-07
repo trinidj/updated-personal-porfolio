@@ -14,7 +14,7 @@
       </div>
 
       <div class="subtitle">
-        <p>Creative Developer & Designer. Building digital experiences that bridge technology and human connection.</p>
+        <p>Front-End Developer. Crafting beautiful, responsive user interfaces with modern web technologies and clean, efficient code.</p>
       </div>
 
       <div class="call-to-action">
