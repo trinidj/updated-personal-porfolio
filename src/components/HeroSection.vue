@@ -141,4 +141,61 @@
     color: white;
     transition: all 0.2s ease;
   }
+
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      height: 600px;
+      padding: 0 var(--spacing-xl);
+      background-size: 500px 500px, 500px 500px;
+    }
+
+    .title {
+      font-size: var(--text-4xl);
+    }
+
+    .subtitle {
+      font-size: var(--text-xl);
+      width: 80%;
+    }
+
+    .call-to-action {
+      flex-direction: column;
+      gap: var(--spacing-base);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-container {
+      height: 500px;
+      padding: 0 var(--spacing-lg);
+      gap: var(--spacing-lg);
+      background-size: 300px 300px, 300px 300px;
+    }
+
+    .title {
+      font-size: var(--text-3xl);
+      text-align: center;
+    }
+
+    .title h1 {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .subtitle {
+      font-size: var(--text-lg);
+      width: 95%;
+    }
+
+    .call-to-action {
+      width: 100%;
+    }
+
+    .view-projects,
+    .contact-me {
+      width: 100%;
+      padding: var(--spacing-base) var(--spacing-xl);
+    }
+  }
 </style>
