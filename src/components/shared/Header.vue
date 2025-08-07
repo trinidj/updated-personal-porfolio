@@ -125,4 +125,44 @@
   .list-item:hover::after {
     width: 100%; 
   }
+
+  @media (max-width: 768px) {
+    nav {
+      padding: var(--spacing-base) var(--spacing-xl);
+    }
+
+    .site-title {
+      font-size: var(--text-xl);
+    }
+
+    .list {
+      gap: var(--spacing-base);
+    }
+
+    .contact-button {
+      padding: var(--spacing-sm) var(--spacing-base);
+    }
+
+    .contact-button span {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      padding: var(--spacing-base) var(--spacing-lg);
+    }
+
+    .site-title {
+      font-size: var(--text-lg);
+    }
+
+    .navigation-container {
+      display: none;
+    }
+
+    .contact-button {
+      padding: var(--spacing-xs) var(--spacing-sm);
+    }
+  }
 </style>
