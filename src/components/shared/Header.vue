@@ -3,7 +3,7 @@
   import { Mail } from 'lucide-vue-next';
   import { animate } from 'animejs';
 
-  const navItems = ['Project', 'About', 'Experience', 'Skills'];
+  const navItems = ['Projects', 'About', 'Experience', 'Skills'];
 
   const slideIn = (event) => {
     animate(event.target, {});
@@ -53,7 +53,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: hsl(from var(--color-background-primary) h s calc(l - 5) / 0.2);
+    background: hsl(from var(--color-background-primary) h s calc(l - 5) / 0.1);
     padding: var(--spacing-lg) var(--spacing-5xl);
     border-bottom: 1px solid hsl(from var(--color-background-primary) h s calc(l + 10));
   }
