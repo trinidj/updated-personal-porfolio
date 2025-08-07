@@ -25,7 +25,7 @@
         <div class="service-content">
           <ServiceCard 
             title="Front-end Development"
-            desc="Expert in React, TypeScript, Next.js, and modern CSS frameworks. Building responsive, performant user interfaces with clean code."
+            desc="Expert in React, TypeScript, Next.js, and modern CSS frameworks. Building responsive, performant user     interfaces with clean code."
           >
             <Code2 />
           </ServiceCard>
