@@ -14,6 +14,7 @@
     align-items: center;
     gap: var(--spacing-sm);
     border-radius: 15px;
+    border: none;
     padding: var(--spacing-sm) var(--spacing-xl);
   }
 </style>
