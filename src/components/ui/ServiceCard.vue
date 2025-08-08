@@ -45,7 +45,6 @@
   .service-card {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     gap: var(--spacing-base);
     padding: var(--spacing-lg);
     background: hsl(from var(--color-background-primary) h s calc(l - 3) / 0.5);
