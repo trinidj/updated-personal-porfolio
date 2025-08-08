@@ -160,7 +160,7 @@
   /* Medium-large desktops (1536px - 1919px) - optimized for 1536x1024 */
   @media (min-width: 1536px) and (max-width: 1919px) {
     .hero-container {
-      height: 800px;
+      height: 810px;
       background-size: 600px 600px, 600px 600px;
       background-position: 
         30% 50%,    
