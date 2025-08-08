@@ -3,7 +3,11 @@
   import { Mail } from 'lucide-vue-next';
   import { animate } from 'animejs';
 
-  const navItems = ['Projects', 'About', 'Experience', 'Skills'];
+  const navItems = [
+    { name: 'About', id: 'about-section' },
+    { name: 'Projects', id: 'projects-section' },
+    { name: 'Contact Me', id: 'contact section'}
+  ];
 
   const slideIn = (event) => {
     animate(event.target, {});
@@ -11,7 +15,15 @@
 
   const slideOut = (event) => {
     animate(event.target, {});
-  }
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 </script>
 
 <template>
@@ -25,12 +37,13 @@
         <ul class="list">
           <li 
             v-for="item in navItems" 
-            :key="item" 
+            :key="item.name" 
             class="list-item" 
             @mouseover="slideIn" 
             @mouseout="slideOut"
+            @click="scrollToSection(item.id)"
           >
-            <a href="">{{ item }}</a>
+            <a href="#" @click.prevent>{{ item.name }}</a>
           </li>
         </ul>
       </div>
