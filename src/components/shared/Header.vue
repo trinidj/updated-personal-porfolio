@@ -18,7 +18,7 @@
   <header id="header-section">
     <nav>
       <div class="site-title-container">
-        <span class="site-title">John Trinidad</span>
+        <p class="site-title">John Trinidad</p>
       </div>
 
       <div class="navigation-container">
@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: space-between;
     background: hsl(from var(--color-background-primary) h s calc(l - 5) / 0.1);
-    padding: var(--spacing-lg) var(--spacing-7xl);
+    padding: var(--spacing-lg) 300px;
     border-bottom: 1px solid hsl(from var(--color-background-primary) h s calc(l + 10));
   }
 
